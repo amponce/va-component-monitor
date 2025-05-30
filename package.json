@@ -1,0 +1,63 @@
+{
+  "name": "@amponce/va-component-monitor",
+  "version": "0.1.0",
+  "description": "MCP server for monitoring Department of Veterans Affairs component library usage and compliance",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "va-component-monitor": "dist/bin/server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "prepublishOnly": "npm run build",
+    "mcp:dev": "ts-node src/bin/server.ts",
+    "mcp:start": "node dist/bin/server.js"
+  },
+  "keywords": [
+    "va",
+    "veterans-affairs",
+    "component-library",
+    "mcp",
+    "monitoring",
+    "accessibility",
+    "design-system"
+  ],
+  "author": "Aaron Ponce <aaron@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amponce/va-component-monitor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amponce/va-component-monitor/issues"
+  },
+  "homepage": "https://github.com/amponce/va-component-monitor#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "commander": "^12.0.0",
+    "fast-glob": "^3.3.2",
+    "cheerio": "^1.0.0",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/jest": "^29.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.0.0",
+    "jest": "^29.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

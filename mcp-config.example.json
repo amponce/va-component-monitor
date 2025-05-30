@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "va-component-monitor": {
+      "command": "node",
+      "args": ["dist/bin/server.js"],
+      "env": {
+        "VA_MONITOR_VERBOSE": "true"
+      }
+    }
+  }
+}
